@@ -1,5 +1,4 @@
-from csphere/php-fpm:5.4
-
-add init.sh /init.sh
-
-entrypoint ["/init.sh", "/usr/bin/supervisord", "-n", "-c", "/etc/supervisord.conf"]
+FROM csphere/php-fpm:5.4
+MAINTAINER Ebbe < ***mail.com>
+ADD init.sh /init.sh
+ENTRYPOINT ["/init.sh", "/usr/bin/supervisord", "-n", "-c", "/etc/supervisord.conf"]

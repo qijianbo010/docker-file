@@ -5,8 +5,7 @@
 # Dockerizing php-fpm: Dockerfile for building php-fpm images
 #
 FROM       csphere/centos:7.1
-MAINTAINER Carson,C.J.Zeong <zcy@nicescale.com>
-
+MAINTAINER Ebbe < ***mail.com>
 # Set environment variable
 ENV	APP_DIR /app
 
